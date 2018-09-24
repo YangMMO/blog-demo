@@ -2,11 +2,14 @@ var express = require('express');
 var router = express.Router();
 const blog = require('../db/blog');
 
-/* GET home page. */
+/* GET article page. */
 router.get('/', function(req, res, next) {
-  blog.findAll().then(result=>{
-    res.render('index', {
-      data: result
+  const id = req.param('id')
+
+  blog.findById(id).then(result=>{
+    res.render('article', {
+      title: result.title,
+      content: result.content
     })
   }).catch(err => {
     next(err);

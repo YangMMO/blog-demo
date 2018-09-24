@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/article');
 
 var app = express();
 
@@ -22,10 +22,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/article', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function(err, req, res, next) {
+  console.log(err)
   next(createError(404));
 });
 
@@ -37,8 +38,18 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  // res.render('error');
-  res.send('error 500');
+  res.render('error', {
+    title: `${err.status}错误，页面请求失败`,
+    contnet: `${err.status}<br/>_(:з」∠)_<br/>压得我喘不过气`
+  });
 });
+
+app.get('*', function(req, res) {
+  res.render('error', {
+    title: `404错误，页面请求失败`,
+    contnet: `404<br/>_(:з」∠)_<br/>压得我喘不过气`
+  });
+})
+
 
 module.exports = app;
