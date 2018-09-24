@@ -12,7 +12,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'root',
+      user : 'mmo',
       host : '134.175.56.234',
       ref  : 'origin/master',
       repo : 'git@github.com:YangMMO/blog-demo.git',
