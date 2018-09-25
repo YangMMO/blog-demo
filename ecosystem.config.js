@@ -15,7 +15,7 @@ module.exports = {
       user : 'root',
       host : '134.175.56.234',
       ref  : 'origin/master',
-      repo : 'git@github.com:YangMMO/blog-demo.git',
+      repo : 'https://github.com/YangMMO/blog-demo.gitt',
       path : '/data/www',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
