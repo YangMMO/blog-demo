@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>MMOO.FUN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>MMOO.FUN-Admin</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -47,32 +47,40 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="page-heading">
-						<h1>MMOO.FUN</h1>
-            <span class="subheading">_(:з」∠)_</span>
-            <h2>夹缝生存</h2>
+					<div class="page-heading floating-label-form-grou">
+            <h1>你回来啦</h1>
+            <h2>有什么敬请吩咐吧</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-
+  </header>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
 				<!-- Home Post List -->
 				<div id="j-list-wrap" class="list-wrap">
         </div>
-          <% for(var i = data.length - 1; i >= 0; i--){%>
-            <article class="post-preview">
-              <a href="/article/?id=<%=data[i].id%>">
-                <h2 class="post-title"><%=data[i].title%></h2>
-                <h3 class="post-subtitle"><%-data[i].content%></h3>
-              </a>
-              <p class="post-meta"><%=data[i].createdAt%></p>
-            </article>
+        <div class="post-preview tool-font" id="tool-box">
+            <div class="clearfix">
+                <a class="tab-head tool-btn" href="javascript:void(0)">新增文章</a>
+                <a class="tab-head tool-btn" href="javascript:void(0)">文章管理</a>
+                <a class="tab-head tool-btn" href="javascript:void(0)">更多...</a>
+            </div>
             <hr>
-          <% } %>
+            <div>
+                <div class="tab-body tool-add_article">
+                  <form>
+                    <input type="text" placeholder="文章标题">
+                    <textarea name="" id="" cols="30" rows="10">滚滚长江东逝水</textarea>
+                  </form>
+                  <button>提交</button>
+                </div>
+                <div class="tab-body">文章管理暂未开放</div>
+                <div class="tab-body">开发中</div>
+            </div>
+        </div>
+        <hr>
 				<!-- Pager -->
 				<div class="clearfix" style="display:none;">
 					<a class="btn btn-primary float-right" href="javascript:" id="j-load-more">加载更多</a>
@@ -125,8 +133,14 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/clean-blog.min.js"></script>
-	<script src="js/ejs.min.js"></script>
+  <script src="js/clean-blog.min.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    const tab = new Tab({
+      boxId: 'tool-box'
+    })
+  </script>
 </body>
 
 </html>
