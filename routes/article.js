@@ -3,7 +3,7 @@ var router = express.Router();
 const blog = require('../db/blog');
 
 /* GET article page. */
-router.get('/', function(req, res, next) {
+router.get('/article', function(req, res, next) {
   const id = req.param('id')
 
   blog.findById(id).then(result=>{
