@@ -30,7 +30,7 @@ app.use('/api', apiRouter);
 app.use('/article', usersRouter);
 app.use('/admin', adminRouter);
 app.use('/system', systemRouter);
-app.use('/dseign', designRouter);
+app.use('/design', designRouter);
 
 // catch 404 and forward to error handler
 app.use(function(err, req, res, next) {
