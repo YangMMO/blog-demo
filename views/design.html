@@ -42,36 +42,33 @@
 
 	<!-- Page Header -->
 
-	<div class="row">
-		<div class="container">
-			<div class="calculate mx-auto">
-				<div class="calculate-c">
-					<div>
-						<span>比例换算</span>
-						<ul id="calculator-type">
-							<li><a class="c-active">16:9</a></li>
-							<li><a>21:9</a></li>
-							<li><a>4:3</a></li>
-							<li><a>2:1</a></li>
-							<li class="customize"><a>自定<input type="number" onkeyup="isCustomize()">:<input type="number" onkeyup="isCustomize()"></a></li>
-						</ul>
-					</div>
-					<div class="calculator" id="calculator">
-						<section id="width">
-							<h1 style="color: rgb(255, 255, 255); font-weight: 300;">宽</h1>
-							<input style="opacity: 0.3;" name="width" onkeyup="onKeyUp(event, this, 0)"  value="" type="text" placeholder="输入" onfocus="onFocus(this)" onblur="onBlur(this)">
-						</section>
-						<section id="height">
-							<h1 style="color: rgb(255, 255, 255); font-weight: 300;">高</h1>
-							<input style="opacity: 0.3;" name="height" onkeyup="onKeyUp(event, this, 1)" value="" type="text" placeholder="输入" onfocus="onFocus(this)" onblur="onBlur(this)">
-						</section>
-						<span>X</span>
-					</div>
-					<p>MMOO.FUN制作</p>
-				</div>
-				
+
+	<div class="calculate mx-auto">
+		<div class="calculate-c">
+			<div>
+				<span>常见比例</span>
+				<ul id="calculator-type">
+					<li><a class="c-active">16:9</a></li>
+					<li><a>21:9</a></li>
+					<li><a>4:3</a></li>
+					<li><a>2:1</a></li>
+					<li class="customize"><a>自定<input type="number" onkeyup="isCustomize()">:<input type="number" onkeyup="isCustomize()"></a></li>
+				</ul>
 			</div>
+			<div class="calculator" id="calculator">
+				<section id="width">
+					<h1 style="color: rgb(255, 255, 255); font-weight: 300;">宽</h1>
+					<input style="opacity: 0.3;" name="width" onkeyup="onKeyUp(event, this, 0)"  value="" type="text" placeholder="输入" onfocus="onFocus(this)" onblur="onBlur(this)">
+				</section>
+				<section id="height">
+					<h1 style="color: rgb(255, 255, 255); font-weight: 300;">高</h1>
+					<input style="opacity: 0.3;" name="height" onkeyup="onKeyUp(event, this, 1)" value="" type="text" placeholder="输入" onfocus="onFocus(this)" onblur="onBlur(this)">
+				</section>
+				<span>X</span>
+			</div>
+			<p>MMOO.FUN制作</p>
 		</div>
+		
 	</div>
 
 	<!-- Footer -->

@@ -16,11 +16,11 @@ a {
 
 .calculate{
   width: 100%;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 
 .calculate-c {
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: #041828;
 }
 
