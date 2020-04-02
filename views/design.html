@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../public/css/main.css">
+	<link rel="stylesheet" href="../public/css/style.css"> -->
+
 	<link href="favicon.ico"  rel="icon" type="image/x-icon">
 </head>
 
@@ -37,17 +42,34 @@
 
 	<!-- Page Header -->
 
-	<div class="container calculate">
-		<h1>常见比例</h1>
-		<ul>
-			<li>16:9</li>
-			<li>21:9</li>
-			<li>4:3</li>
-			<li>2:1</li>
-		</ul>
-		<span>宽<input type="number"></span>
-		<span>高<input type="number"></span>
-		<button id="">转换</button>
+	<div class="row">
+		<div class="container">
+			<div class="calculate mx-auto">
+				<div class="calculate-c">
+					<div>
+						<span>比例换算</span>
+						<ul>
+							<li><a href="#">16:9</a></li>
+							<li><a href="#">21:9</a></li>
+							<li><a href="#">4:3</a></li>
+							<li><a href="#">2:1</a></li>
+							<!-- <li><a href="#">自定<input type="text" value="Value">:<input type="text" value="Value"></a></li> -->
+						</ul>
+					</div>
+					<div class="calculator">
+						<section id="width">
+							<h1 style="color: rgb(255, 255, 255); font-weight: 300;">Width</h1>
+							<input style="opacity: 0.3;" name="width" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" value="Value" type="text">
+						</section>
+						<section id="height">
+							<h1 style="color: rgb(255, 255, 255); font-weight: 300;">Height</h1>
+							<input style="opacity: 0.3;" name="height" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" value="Value" type="text">
+						</section>
+						<span>X</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Footer -->
@@ -97,6 +119,11 @@
 	<script src="js/clean-blog.min.js"></script>
 	<script src="js/ejs.min.js"></script>
 	<script src="js/design.js"></script>
+	<!-- <script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/bootstrap.bundle.min.js"></script>
+	<script src="../public/js/clean-blog.min.js"></script>
+	<script src="../public/js/ejs.min.js"></script>
+	<script src="../public/js/design.js"></script> -->
 </body>
 
 </html>

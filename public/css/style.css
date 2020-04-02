@@ -2,13 +2,99 @@
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 } */
-
+span, div, h1, h2, h3, h4, h5, h6, a, input {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 a {
   color: #00B7FF;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar {
   background-color: #ffbf00 !important;
   position: static !important;
+}
+
+.calculate{
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.calculate-c {
+  padding: 40px 20px;
+  background: #2751c7;
+}
+
+.calculate-c div {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.calculate-c span {
+  font-size: 1.5rem;
+}
+
+.calculate-c ul {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.calculate-c ul a {
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.calculator {
+  position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator section {
+  padding: 60px;
+  max-width: 400px;
+}
+
+.calculator section:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calculator section h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calculator section input {
+    width: 100%;
+    background: none;
+    border: 0;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    opacity: 0.3;
+    outline: none;
+    color: #fff;
+}
+
+.calculator span {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+  background-color: #2751c7;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
